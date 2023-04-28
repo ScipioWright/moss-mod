@@ -21,7 +21,7 @@ end
 
 
 function OnPlayerSpawned(player_id) -- called when the player spawns on both new game and continue
-    if ModSettingsGet("extras") == true then
+    if ModSettingGet("moss-mod.extras") == true then
         give_extras()
     end
 end
