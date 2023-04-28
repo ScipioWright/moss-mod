@@ -16,7 +16,7 @@ end
 
 
 function give_extras()
-    print("tbd")
+    give_perk("BLEED_SLIME")
 end
 
 
