@@ -10,13 +10,20 @@ local mod_settings =
 {
 	{
 		category_id = "group_of_settings",
-		ui_name = "moss mod settings",
-		ui_description = "moss mod settings",
+		ui_name = "Moss Mod Settings",
+		ui_description = "",
 		settings = {
 			{
-				id = "extras",
-				ui_name = "Extra features",
-				ui_description = "Gives the slime blood perk on spawn",
+				id = "slimy_blood",
+				ui_name = "Slimy Blood",
+				ui_description = "Turns your blood black. Acts as normal blood.",
+				value_default = false,
+				scope = MOD_SETTING_SCOPE_NEW_GAME,
+			},
+			{
+				id = "slime_perk",
+				ui_name = "Slime Blood Perk",
+				ui_description = "Gives the Slime Blood perk on new game.",
 				value_default = false,
 				scope = MOD_SETTING_SCOPE_NEW_GAME,
 			},

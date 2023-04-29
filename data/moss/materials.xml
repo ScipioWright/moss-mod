@@ -1,0 +1,52 @@
+<Materials>
+
+  <CellDataChild
+    _parent="blood"
+    name="moss_blood"
+    wang_color="aa111111"
+    >
+    <Graphics
+      texture_file=""
+      color="ff111111"
+      >
+    </Graphics>
+  </CellDataChild>
+
+  <CellDataChild
+    _parent="blood_fading"
+    name="moss_blood_fading"
+    wang_color="aa111112"
+    >
+    <Graphics
+      texture_file=""
+      color="ff111111"
+      >
+    </Graphics>
+  </CellDataChild>
+
+  <CellDataChild
+    _parent="slime"
+    name="moss_blood_slime"
+    wang_color="aa111121"
+    cold_freezes_to_material="moss_ice_slime_static"
+    >
+    <Graphics
+      texture_file=""
+      color="ff111111"
+      >
+    </Graphics>
+  </CellDataChild>
+
+  <CellDataChild
+    _parent="ice_slime_static"
+    name="moss_ice_slime_static"
+    wang_color="aa111211"
+    >
+    <Graphics
+      texture_file=""
+      color="ff111111"
+      >
+    </Graphics>
+  </CellDataChild>
+
+</Materials>
