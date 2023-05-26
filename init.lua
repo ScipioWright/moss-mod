@@ -3,6 +3,11 @@ dofile_once("data/scripts/perks/perk.lua") -- Perk-related commands
 
 ModMaterialsFileAdd("data/moss/materials.xml")
 
+local TRANSLATIONS_FILE = "data/translations/common.csv"
+local translations = ModTextFileGetContent(TRANSLATIONS_FILE) .. ModTextFileGetContent("data/moss/translations.csv")
+ModTextFileSetContent(TRANSLATIONS_FILE, translations)
+
+
 local function get_player() -- outputs the player's entity ID
 	return EntityGetWithTag("player_unit")[1]
 end
@@ -33,6 +38,7 @@ end
 
 
 function OnPlayerSpawned(player_id) -- called when the player spawns on both new game and continue
+	EntitySetName(player_id, "Moss")
 	if ModSettingGet("moss-mod.slimy_blood") == true then
 		SlimyBlood(player_id)
 	end
